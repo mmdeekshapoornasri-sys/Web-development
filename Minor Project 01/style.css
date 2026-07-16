@@ -1,0 +1,90 @@
+body{
+    margin:0;
+    background:#08080f;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    background:#111;
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    color:#b6ff4e;
+    text-decoration:none;
+    margin:15px;
+}
+
+nav a:hover{
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:80px;
+}
+
+h1,h2,h3{
+    color:#b6ff4e;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#b6ff4e;
+    color:black;
+    text-decoration:none;
+}
+
+.terminal{
+    width:300px;
+    margin:20px auto;
+    border:1px solid #b6ff4e;
+    padding:15px;
+    font-family:monospace;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.project{
+    border:1px solid #b6ff4e;
+    margin:20px;
+    padding:20px;
+}
+
+.skill-box{
+    border:1px solid #b6ff4e;
+    margin:20px;
+    padding:20px;
+}
+
+input,textarea{
+    width:300px;
+    padding:10px;
+    background:#111;
+    color:white;
+    border:1px solid #b6ff4e;
+}
+
+button{
+    padding:10px 20px;
+    background:#b6ff4e;
+    border:none;
+    cursor:pointer;
+}
+
+.card{
+    border:1px solid #b6ff4e;
+    padding:20px;
+    width:250px;
+    margin:20px auto;
+    text-align:center;
+}

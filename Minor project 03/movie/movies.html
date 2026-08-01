@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieScope - Movie Search App</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="movies.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+    
+        <header>
+            <h1>🎬 MovieScope</h1>
+            <p>Search your favourite movies instantly</p>
+        </header>
+
+    
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="movieInput"
+                placeholder="Enter Movie Name..."
+                autocomplete="off">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        
+        <div id="loading" class="loading hidden">
+
+            <div class="spinner"></div>
+
+            <p>Searching Movie...</p>
+
+        </div>
+
+    
+        <div id="errorMessage" class="error hidden"></div>
+
+        
+        <div id="movieCard" class="movie-card hidden">
+
+            <img
+                id="moviePoster"
+                src=""
+                alt="Movie Poster">
+
+            <div class="movie-info">
+
+                <h2 id="movieTitle">Movie Title</h2>
+
+                <p><strong>Year :</strong>
+                    <span id="movieYear"></span>
+                </p>
+
+                <p><strong>Released :</strong>
+                    <span id="movieReleased"></span>
+                </p>
+
+                <p><strong>Genre :</strong>
+                    <span id="movieGenre"></span>
+                </p>
+
+                <p><strong>Language :</strong>
+                    <span id="movieLanguage"></span>
+                </p>
+
+                <p><strong>Runtime :</strong>
+                    <span id="movieRuntime"></span>
+                </p>
+
+                <p><strong>IMDb Rating :</strong>
+                    ⭐
+                    <span id="movieRating"></span>
+                </p>
+
+                <p><strong>Director :</strong>
+                    <span id="movieDirector"></span>
+                </p>
+
+                <p><strong>Actors :</strong>
+                    <span id="movieActors"></span>
+                </p>
+
+                <p><strong>Plot :</strong></p>
+
+                <p id="moviePlot"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <script type="module" src="movies.js"></script>
+
+</body>
+
+</html>

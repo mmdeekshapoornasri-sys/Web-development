@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherScope</title>
+
+    <link rel="stylesheet" href="weather.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌤 WeatherScope</h1>
+    <p>Get Real-Time Weather Information</p>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="city"
+            placeholder="Enter city name"
+            autocomplete="off">
+
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="error" class="error"></div>
+
+    <div class="weather-card" id="weather" style="display: none;">
+
+        <img id="icon" alt="Weather Icon">
+
+        <h2 id="cityName"></h2>
+
+        <h1 id="temp"></h1>
+
+        <h3 id="condition"></h3>
+
+        <div class="details">
+
+            <div class="box">
+                <h4>Humidity</h4>
+                <p id="humidity"></p>
+            </div>
+
+            <div class="box">
+                <h4>Wind</h4>
+                <p id="wind"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="weather.js"></script>
+
+</body>
+</html>
